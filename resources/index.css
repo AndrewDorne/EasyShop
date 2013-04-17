@@ -1,1 +1,24 @@
 /*index.css*/
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1{
+    display: inline;
+}
+
+#search{
+    width:50%;
+    font-size: 3em;
+
+}
+
+#div_search{
+    margin-top: 25%;
+}
+
+#login{
+    float: right;
+}
