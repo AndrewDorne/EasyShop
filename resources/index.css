@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 html, body, #container {
@@ -38,4 +40,22 @@ html, body, #container {
   position: fixed, bottom;
   margin-top: -3em;
   border: 0px;
+}
+
+h1{
+    display: inline;
+}
+
+#search{
+    width:50%;
+    font-size: 3em;
+
+}
+
+#div_search{
+    margin-top: 25%;
+}
+
+#login{
+    float: right;
 }
