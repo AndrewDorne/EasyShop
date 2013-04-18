@@ -50,6 +50,10 @@ div.simpleCart_total, div.price {
   right: 6em;
 }
 
-div.itemRow > div {
+div.itemRow > div, div.headerRow > div {
   float: left;
+}
+
+div.item-remove {
+  float: right;
 }
