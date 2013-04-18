@@ -50,10 +50,21 @@ div.simpleCart_total, div.price {
   right: 6em;
 }
 
+a.simpleCart_checkout {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 div.itemRow > div, div.headerRow > div {
   float: left;
 }
 
 div.item-remove {
   float: right;
+}
+
+p.credit {
+  padding-top: 1.5em;
+  text-align: center;
 }
