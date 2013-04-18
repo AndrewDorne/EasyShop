@@ -23,6 +23,7 @@ body {
 
 #content-container {
   position: fixed;
+<<<<<<< HEAD
   top: 3em;
   bottom: 3em;
   width: 100%;
@@ -65,6 +66,8 @@ div.header div.topsearch {
 div.header div.settings {
   margin-right: -15em;
   background: #222;
+  margin: 0px;
+  border: 0px;
 }
 
 #content {
@@ -73,23 +76,15 @@ div.header div.settings {
   height: 100%;
 }
 
-  #center-content {
-    background-color: #aaa;
-    width: 900px;
-    height: 100%;
-    margin: auto;
-    position: relative;
-  }
-
-    #center-content > div {
-      background-color: #ddd;
-      position: absolute;
-    }
-
     #tl, #tr, #bl, #br {
       height: 300px;
       width: 225px;
     }
+
+h1 {
+    display: inline;
+    margin: 200px;
+}
 
     #tl, #tm, #tr {
       top: 0em;
@@ -127,4 +122,33 @@ div.header div.settings {
   height: 3em;
   position: fixed;
   bottom: 0;
+}
+
+#description{
+    border: 1px solid black;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    display: inline;
+}
+
+#desc_title{
+    font-weight: bold;
+}
+
+#add_to_cart{
+    font-weight: bold;
+    font-size: 2em;
+    width:200px;
+    height:50px;
+}
+
+#price{
+    display: inline;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    font-size: 2em;
 }
