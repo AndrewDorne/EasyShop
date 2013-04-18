@@ -60,7 +60,7 @@
 
         <div class="span6">
           <a href="search_results.html">
-            <img src="resources/img/toys.jpg" height="240" width="450">
+            <img src="resources/img/toys_resize.jpg" height="240" width="450">
           </a>
         </div>
 
@@ -77,8 +77,14 @@
           <h2>Heading</h2>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
+        
         <div class="span6">
-          <h2>Search</h2>
+          <div id='search-box'>
+            <form action='/search' id='search-form' method='get' target='_top'>
+              <input id='search-text' name='q' placeholder='type here' type='text'/>
+              <button id='search-button' type='submit'><span>Search</span></button>
+            </form>
+          </div>
         </div>
 
         <div class="span3 invisible">
@@ -90,8 +96,9 @@
       <!-- Row 3 -->
       <div class="row">
         <div class="span3">
-          <h2>Heading</h2>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <a href="search_results.html">
+            <img src="resources/img/food_resize.jpg" height="300" width="225">
+          </a>
         </div>
 
         <div class="span6">
@@ -101,15 +108,16 @@
         </div>
 
         <div class="span3">
-          <h2>Heading</h2>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <a href="search_results.html">
+            <img src="resources/img/electronics_resize.jpg" height="300" width="225">
+          </a>
         </div>
       </div>
     </div>
     
     <div class="container">
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; EasyShop 2013</p>
       </footer>
     </div>
 

@@ -1,3 +1,30 @@
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+#push, #footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .qtytext {
     font-size:9px;
     font-family:Verdana, Arial, Helvetica, sans-serif;
@@ -5,4 +32,33 @@
     margin:0;
     width: 50px;
     display: inline;
+}
+
+div.row {
+  position: relative;
+}
+
+div.qty {
+  position: absolute;
+  bottom: 0;
+  right: 11.5em;
+}
+
+div.simpleCart_total, div.price {
+  position: absolute;
+  bottom: 0;
+  right: 6em;
+}
+
+div.itemRow > div, div.headerRow > div {
+  float: left;
+}
+
+div.item-remove {
+  float: right;
+}
+
+p.credit {
+  padding-top: 1.5em;
+  text-align: center;
 }
