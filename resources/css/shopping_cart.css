@@ -57,3 +57,8 @@ div.itemRow > div, div.headerRow > div {
 div.item-remove {
   float: right;
 }
+
+p.credit {
+  padding-top: 1.5em;
+  text-align: center;
+}
