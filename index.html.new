@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>EasyShop</title>
+  <link rel="stylesheet" type="text/css" href="resources/index.css">
+  <script src="resources/index.js"></script>
+</head>
+
+<body>
+  
+  <div id="header-container">
+  <div class="header">
+  
+    <div class="home-logo">
+      EasyShop
+    </div>
+          
+    <div class="topsearch">
+      Search
+    </div>
+                  
+    <div class="settings">
+      Settings
+    </div>
+
+  </div>
+  </div>
+
+  <div id="content-container">
+  <div id="content">
+
+    <div id="center-content">
+
+      <div id="tl">
+      top left corner
+      </div>
+      <div id="tm">
+      top middle
+      </div>
+      <div id="tr">
+      top right corner
+      </div>
+
+      <div id="center-search">
+      Search
+      </div>
+
+      <div id="bl">
+      bottom left corner
+      </div>
+      <div id="bm">
+      bottom middle
+      </div>
+      <div id="br">
+      bottom right corner
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <div id="footer-container">
+  <div id="footer">
+    
+    <p>&copy;</p>
+
+  </div>
+<<<<<<< HEAD
+  </div>
+
+=======
+>>>>>>> 01278458cd5d67551da6b42f0c6c6e4f3aa550d5
+</body>
+
+</html>
