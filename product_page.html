@@ -23,7 +23,25 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">EasyShop</a>
+          <a class="brand" href="index.html">EasyShop</a>
+            <form class="navbar-search pull-left offset3">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+          <!-- The drop down menu -->
+          <ul class="nav pull-right">
+            <li><a href="profile.html">Hi Carol</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  <i class="icon-cog icon-large" style="padding-top:5px"></i><i class="icon-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu" style="padding: 15px;">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="profile.html">Profile</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Sign Out</a></li>
+                </ul>
+              </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -16,46 +16,80 @@ html, body {
   background-color: #f5f5f5;
 }
 
-.qtytext {
-    font-size:9px;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    padding-top:20;
-    margin:0;
-    width: 50px;
-    display: inline;
-}
+/* .qtytext { */
+/*     font-size:9px; */
+/*     font-family:Verdana, Arial, Helvetica, sans-serif; */
+/*     padding-top:20; */
+/*     margin:0; */
+/*     width: 50px; */
+/*     display: inline; */
+/* } */
 
-div.row {
-  position: relative;
-}
+/* div.row { */
+/*   position: relative; */
+/* } */
 
-div.qty {
-  position: absolute;
-  bottom: 0;
-  right: 11.5em;
-}
+/* div.qty { */
+/*   position: absolute; */
+/*   bottom: 0; */
+/*   right: 11.5em; */
+/* } */
 
-div.simpleCart_total, div.price {
-  position: absolute;
-  bottom: 0;
-  right: 6em;
-}
+/* div.simpleCart_total, div.price { */
+/*   position: absolute; */
+/*   bottom: 0; */
+/*   right: 6em; */
+/* } */
 
-a.simpleCart_checkout {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+/* a.simpleCart_checkout { */
+/*   position: absolute; */
+/*   right: 0; */
+/*   bottom: 0; */
+/* } */
 
-div.itemRow > div, div.headerRow > div {
-  float: left;
-}
+/* div.itemRow > div, div.headerRow > div { */
+/*   float: left; */
+/* } */
 
-div.item-remove {
-  float: right;
-}
+/* div.item-remove { */
+/*   float: right; */
+/* } */
 
 p.credit {
   padding-top: 1.5em;
   text-align: center;
 }
+
+.simpleCart_items table{
+  border:1px solid #ccc;
+}
+.simpleCart_items th{
+  color:#333;
+  text-align:left;
+  padding:10px 30px;
+  border-bottom:1px solid #ccc;
+  background: #ededed;
+  background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ededed));
+  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: -o-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: -ms-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ededed',GradientType=0 );
+}
+.simpleCart_items td{
+  padding:10px 30px;
+  vertical-align:middle;
+  border-bottom:1px solid #ccc;
+}
+.item-image,
+.item-image img{width:72px;}
+.item-name{width:50%;}
+.item-quantity,
+.item-quantity input{
+  width:30px;
+  text-align:center;
+}
+.item-price,
+.item-subtotal{width:50px;}
+
