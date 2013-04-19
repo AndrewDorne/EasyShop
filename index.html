@@ -10,11 +10,14 @@
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet">
     <link href="resources/css/index.css" rel="stylesheet" media="screen">
+    <link href="resources/css/forms.css" rel="stylesheet">
 
     <!-- Load supplemental Javascript -->
     <script type="text/javascript" src="resources/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="resources/js/forms.js"></script>
 
   </head>
   <body>
@@ -30,7 +33,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
               <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                <form action="text.html" method="get" accept-charset="UTF-8">
+                <form id="loginForm" action="text.html" method="get" accept-charset="UTF-8">
                   <input id="username" style="margin-bottom: 15px;"
                          type="text" size="30" placeholder="Username"/>
                   <input id="password" style="margin-bottom: 15px;"
@@ -121,41 +124,41 @@
       </footer>
     </div>
 
-    <div id="signUp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 id="myModalLabel">Sign Up!</h3>
+      <div id="signUp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Sign Up! <small>(will not submit any information)</small></h3>
         </div>
         <div class="modal-body">
-          <form action="text.html" method="get" class="form-horizontal">
+          <form action="text.html" id="signUpForm" method="get" class="form-horizontal">
             <div class="control-group">
               <label class="control-label" for="userName">Username</label>
               <div class="controls">
-                <input id="userName" type="text" size="30" placeholder="Username"/>
+                <input id="userName" type="text" size="30" name="username" placeholder="Username"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="fullName">Full name</label>
               <div class="controls">
-                <input id="fullName" type="text" size="30" placeholder="Full Name"/>
+                <input id="fullName" type="text" size="30" name="fullname" placeholder="Full Name"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="email">Email</label>
               <div class="controls">
-                <input id="email" type="text" size="30" placeholder="Email"/>
+                <input id="email" type="text" size="30" name="email" placeholder="Email"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="password">Password</label>
               <div class="controls">
-                <input id="password" type="password" size="30" placeholder="Password"/>
+                <input id="password" type="password" size="30" name="password" placeholder="Password"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="passwordConfirmation">Password Confirmation</label>
               <div class="controls">
-                <input id="passwordConfirmation" type="password" size="30" placeholder="Password Confirmation"/>
+                <input id="passwordConfirmation" type="password" size="30" name="passwordconfirm" placeholder="Password Confirmation"/>
               </div>
             </div>
           </form>
