@@ -20,10 +20,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.html">EasyShop</a>
-            <form class="navbar-search pull-left offset3">
-              <input type="text" class="search-query" placeholder="Search">
-            </form>
+          <a class="brand" href="loggedin.html">EasyShop</a>
           <!-- The drop down menu -->
           <ul class="nav pull-right">
             <li><a href="shopping_cart.html">
@@ -42,6 +39,73 @@
                 </ul>
               </li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:80px">
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="span3">
+          <a href="search_results.html">
+            <img src="resources/img/outdoor_recreation.jpg" height="300" width="225">
+          </a>
+        </div>
+
+        <div class="span6">
+          <a href="search_results.html">
+            <img src="resources/img/toys_resize.jpg" height="240" width="450">
+          </a>
+        </div>
+
+        <div class="span3">
+          <a href="search_results.html">
+            <img src="resources/img/clothes.jpg" height="300" width="225">
+          </a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="span3 invisible">
+          <h2>Heading</h2>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        
+        <div class="span6">
+          <div id='search-box'>
+            <form onsubmit="window.open('search_results.html');"
+                  class="navbar-search pull-left" style="padding:40px;">
+              <input style="font-size: 2em;width:400px; height: 50px;" type="text" class="search-query" placeholder="Search">
+            </form>
+          </div>
+        </div>
+
+        <div class="span3 invisible">
+          <h2>Heading</h2>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="span3">
+          <a href="search_results.html">
+            <img src="resources/img/food_resize.jpg" height="300" width="225">
+          </a>
+        </div>
+
+        <div class="span6">
+          <a href="search_results.html">
+            <img src="resources/img/office_supplies.jpg" height="240" width="450">
+          </a>
+        </div>
+
+        <div class="span3">
+          <a href="search_results.html">
+            <img src="resources/img/electronics_resize.jpg" height="300" width="225">
+          </a>
         </div>
       </div>
     </div>
