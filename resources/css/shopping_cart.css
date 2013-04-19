@@ -93,3 +93,7 @@ p.credit {
 .item-price,
 .item-subtotal{width:50px;}
 
+simpleCart_checkout {
+  position: absolute;
+  right: 0;
+}

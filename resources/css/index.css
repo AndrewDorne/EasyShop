@@ -50,3 +50,29 @@ img {
     box-shadow: -4px 0px 3px -2px #ddd;
     cursor: pointer;
 }
+
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -60px;
+  padding-bottom: -60px;
+}
+
+#push, #footer {
+  height: 60px;
+}
+
+#footer {
+  background-color: #f5f5f5;
+}
+
+p.credit {
+  padding-top: 1.5em;
+  text-align: center;
+}
