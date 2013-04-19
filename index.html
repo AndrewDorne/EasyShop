@@ -26,9 +26,6 @@
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="index.html">EasyShop</a>
-            <form class="navbar-search pull-left offset3">
-              <input type="text" class="search-query" placeholder="Search">
-            </form>
           <!-- The drop down menu -->
           <ul class="nav pull-right">
             <li><a href="#signUp" data-toggle="modal">Sign Up</a></li>
@@ -86,7 +83,8 @@
         
         <div class="span6">
           <div id='search-box'>
-            <form class="navbar-search pull-left" style="padding:40px;">
+            <form onsubmit="window.open('search_results.html');"
+                  class="navbar-search pull-left" style="padding:40px;">
               <input style="font-size: 2em;width:400px; height: 50px;" type="text" class="search-query" placeholder="Search">
             </form>
           </div>
