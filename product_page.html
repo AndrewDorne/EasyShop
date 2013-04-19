@@ -1,4 +1,3 @@
-<link rel="shortcut icon" href="resources/img/temp_logo.png" type="image/x-icon" />
 <!DOCTYPE html>
 <html>
 
@@ -9,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Load style sheets -->
+    <link rel="shortcut icon" href="resources/img/temp_logo.png" type="image/x-icon" />
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet">
 
@@ -17,6 +17,7 @@
     <script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="resources/js/simpleCart.js"></script>
+    <script type="text/javascript" src="resources/js/forms.js"></script>
 
   </head>
   <body>
@@ -50,7 +51,7 @@
       </div>
     </div>
 
-    <div class="container simpleCart_shelfItem" style="padding-top:40px">
+    <div class="container simpleCart_shelfItem" style="padding-top:60px">
       <!-- Row 1 -->
       <div class="row">
         <div class="span10">
@@ -108,13 +109,12 @@
           <h2>Reviews</h2>
         </div>
         <div class="span3 offset1">
-            <button style="font-size: 1.5em;" class="btn">Add Review</button>
+            <a href="#reviewModal" style="font-size: 1.5em;" class="btn" data-toggle="modal">Add Review</a>
         </div>
       </div>
       
       <!-- Row 5 -->
-      <div style="font-size: 1.5em;" class="row">   
-        <div class="accordion" id="accordion2">
+      <div class="accordion" id="accordion2" style="font-size: 1.5em">
         <div class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle" data-toggle="collapse"
@@ -155,13 +155,52 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     
     <div class="container">
       <footer>
         <p>&copy; Company 2013</p>
       </footer>
+    </div>
+
+
+      <div id="reviewModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Review this product! <small>(will not submit any information)</small></h3>
+        </div>
+        <div class="modal-body">
+          <form action="" id="reviewForm" method="get" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="rating">Rating</label>
+              <div class="controls">
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="reviewTitle">Review Title</label>
+              <div class="controls">
+                <input id="reviewTitle" type="text" size="30" placeholder="Review Title"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="reviewContent">Review Content</label>
+              <div class="controls">
+                <textarea id="reviewContent" rows="3" placeholder="Add your review"/></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-success" data-dismiss="modal" href="">Submit Review</button>
+      </div>
     </div>
   </body>
 </html>

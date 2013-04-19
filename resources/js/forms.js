@@ -42,4 +42,10 @@ $(document).ready(function() {
     $(".control-group").removeClass('error').removeClass('success');
     validator.resetForm() 
   });
+
+  $("#reviewForm").on("hidden", function() { 
+    $(".modal-body").find('form')[0].reset();
+    $(".control-group").removeClass('error').removeClass('success');
+    validator.resetForm() 
+  });
 });
