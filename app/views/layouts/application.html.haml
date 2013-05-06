@@ -1,0 +1,30 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title= content_for?(:title) ? yield(:title) : "EasyShop"
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:content => "EasyShop makes it easy for the elderly to purchase goods online", :name => "description"}
+    %meta{:content => "EasyShop", :name => "author"}
+    = favicon_link_tag
+    / Styles
+    = stylesheet_link_tag "application", :media => "all"
+    / Scripts
+    = javascript_include_tag "application"
+
+    / For IE6-8 Support of HTML5
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+    = render 'layouts/navigation'
+    #main{:role => "main"}
+      = render 'layouts/messages'
+      .container
+        = yield
+      .footer
+        %ul
+          &copy; EasyShop
+          %br
+          %a{ :href => 'mailto:harlemshakes@mit.edu' } Contact Us
