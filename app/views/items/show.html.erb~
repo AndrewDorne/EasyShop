@@ -1,0 +1,201 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>EasyShop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load style sheets -->
+    <link rel="shortcut icon" href="resources/img/temp_logo.png" type="image/x-icon" />
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Load supplemental Javascript -->
+    <script type="text/javascript" src="resources/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/simpleCart.js"></script>
+    <script type="text/javascript" src="resources/js/forms.js"></script>
+
+</head>
+<%
+%p#notice= notice
+
+%p
+  %b Name:
+  = @item.name
+%p
+  %b Price:
+  = @item.price
+%p
+  %b Description:
+  = @item.description
+%p
+  %b Brand:
+  = @item.brand
+
+= link_to 'Edit', edit_item_path(@item)
+\|
+= link_to 'Back', items_path
+%>
+  <div class="container simpleCart_shelfItem" style="padding-top:60px">
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="span10">
+          <h1 class="item_name">NBA Trainer Basketball</h1>
+        </div>
+        <div class="span2">
+            <img style="padding:15px;" id="logo"
+                 src="resources/img/SpaldingLogoBlack.jpg">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="span4 offset4">
+          <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item caro_img"><img src="resources/img/spalding_nbaball.jpg"></div>
+              <div class="item caro_img"><img src="resources/img/spalding_nbaball.jpg"></div>
+              <div class="item caro_img"><img src="resources/img/spalding_nbaball.jpg"></div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>  
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div style="font-size: 1.5em;" class="row">
+        <div class="span8">
+          <h2>Description</h2>
+            <p>Spalding NBA Official Game Ball Basketball - 29.5"	
+                <ul class="offset1">
+                    <li>Full Grain, Horween Leather Cover</li>
+                    <li>Official NBA Size And Weight</li>
+                    <li>Designed For Indoor Play Only</li>
+                </ul>
+            </p>
+        </div>
+        <div class="span3 offset1">
+            <h2 class="item_price">$44.95</h2>
+            <a onclick="window.open('shopping_cart.html');" href="javascript:;" style="font-size: 1em;" class="btn item_add">Add to Cart</a>
+        </div>
+      </div>
+      
+      <!-- Row 4 -->
+      <div class="row">
+        <div class="span5">
+            <h2>Customer Support</h2>
+        </div>
+        <div class="span3 offset3" style="padding: 20px;font-weight: bold;font-size: 2em;">
+            1-800-888-8888         
+        </div>
+      </div>
+      
+      <!-- Row 5 -->
+      <div class="row">
+        <div class="span8">
+          <h2>Reviews</h2>
+        </div>
+        <div class="span3 offset1">
+            <a href="#reviewModal" style="font-size: 1.5em;" class="btn" data-toggle="modal">Add Review</a>
+        </div>
+      </div>
+      
+      <!-- Row 6 -->
+      <div class="accordion" id="accordion2" style="font-size: 1.5em">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse"
+               data-parent="#accordion2" href="#collapseOne">
+              Great ball but ...    (4/5)
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              Great ball, great grip, but was a little too heavy for me. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse"
+               data-parent="#accordion2" href="#collapseTwo">
+              Excellent basketball    (5/5)
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
+              I play mostly indoor and it has been great for me. It has lasted
+              me a long time and would definitely buy it again. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse"
+               data-parent="#accordion2" href="#collapseThree">
+              Great ball    (5/5)
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+              Great quality, long lasting, a great buy
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div>
+
+
+      <div id="reviewModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Review this product! <small>(will not submit any information)</small></h3>
+        </div>
+        <div class="modal-body">
+          <form action="" id="reviewForm" method="get" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="rating">Rating</label>
+              <div class="controls">
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="reviewTitle">Review Title</label>
+              <div class="controls">
+                <input id="reviewTitle" type="text" size="30" placeholder="Review Title"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="reviewContent">Review Content</label>
+              <div class="controls">
+                <textarea id="reviewContent" rows="3" placeholder="Add your review"/></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-success" data-dismiss="modal" href="">Submit Review</button>
+      </div>
+    </div>
+
