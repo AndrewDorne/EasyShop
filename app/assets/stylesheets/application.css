@@ -17,6 +17,22 @@ body {
   padding-top:60px
 }
 
+.welcome, .categories{
+  text-align: center;
+}
+
+.welcome {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background: #eee;
+}
+
 #search {
   border-radius: 0;
   margin-top: 10px;
@@ -25,6 +41,15 @@ body {
 #search-bar {
   margin-top: 0; !important
   width: auto;
+}
+
+#search-bar-home-form {
+  border-radius: 0;
+}
+
+.search-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-group {
@@ -47,5 +72,19 @@ html, body {
 }
 
 #footer, .push {
-  height: 4em;
+  text-align: center;
+  clear: both;
+}
+
+#footer {
+  position: fixed;
+  height: 1.5em;
+  color: #888;
+  background-color: #cce5ff;
+  bottom: 0;
+  width: 100%;
+}
+
+.push {
+  height: 3em;
 }
