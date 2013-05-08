@@ -17,14 +17,15 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
-
+  
+  gem 'twitter-bootswatch-rails', '~> 2.3.1.2'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'devise'
 
-gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
+gem 'twitter-bootswatch-rails-helpers', '>= 2.3.1'
 gem 'simple_form'
 
 gem 'haml-rails'
