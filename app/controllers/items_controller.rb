@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
   def results
     @items = Item.all
 
-	respond_to do |format|
+    respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @items }
     end

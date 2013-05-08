@@ -2,6 +2,12 @@ EasyShop::Application.routes.draw do
 
   root :to=>"pages#home"
 
+  resources :items do
+    collection do
+      get 'results'
+    end
+  end	
+
   resources :comments, :reviews, :categories, :items
 
   devise_for :users, :controllers => { :registrations => "registrations",

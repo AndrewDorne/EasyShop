@@ -1,1 +1,42 @@
+<head>
+<script>
+    $(function() {
+      var select = $( "#slider_div" );
+      var slider = $( "<div id='slider' class='span6 offset3'></div>" ).insertAfter( select ).slider({
+        min: 1,
+        max: 3,
+        range: "min",
+        value: select[0].selectedIndex+1,
+        slide: function( event, ui ) {
+          select[ 0 ].selectedIndex = ui.value - 1;
+          if (ui.value == 1) {
+            document.location.href = "index.html";
+          }
+          if (ui.value == 2) {
+            document.location.href = "index.html";
+          }
+          if (ui.value == 3) {
+            document.location.href = "index.html";
+          }
+        }
+      });
+      $( "#slider_div" ).change(function() {
+        slider.slider( "value", this.selectedIndex + 1 );
+      });
+    });
+    </script>
+</head>
+<!--slider-->
+    <div class="container" style="padding-top:25px; padding-bottom:25px; text-align: center;">
+      <div class="row" style="text-align: center">
+        <form id="resizing">
+          <label for="slider_div">Resize search results</label>
+            <select id="slider_div" name="slider_div" class="span4 offset4">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </form>
+      </div>
+    </div>
 <%= render "results_small" %>
