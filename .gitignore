@@ -9,7 +9,7 @@
 /db/*.sqlite3
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/log/*
 /tmp
 
 # Ignore cache
@@ -17,3 +17,6 @@
 
 # Ignore vim back-up files
 *.swp
+
+# Solr
+solr/data

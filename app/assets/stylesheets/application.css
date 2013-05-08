@@ -25,6 +25,12 @@ body {
   margin-bottom: 20px;
 }
 
+.jumbotron {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+}
+
 #search {
   border-radius: 0;
   margin-top: 10px;
@@ -37,6 +43,11 @@ body {
 
 #search-bar-home-form {
   border-radius: 0;
+}
+
+.search-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-group {
