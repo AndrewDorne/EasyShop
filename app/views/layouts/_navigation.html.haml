@@ -9,6 +9,9 @@
       = link_to "EasyShop", root_path, :class => "brand"
       .nav-collapse
         %ul.nav
+        %ul.nav.pull-center
+          %li.divider-vertical
+          %li=link_to "Test", "/"
         - if user_signed_in? 
           %ul.nav.pull-right
             %li Hi #{current_user.first_name}
