@@ -48716,3 +48716,1017 @@ Served asset /office_supplies.png - 304 Not Modified (0ms)
 
 Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:48:13 -0400
 Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.haml (9.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:48:47 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (7.2ms)
+  Rendered layouts/_navigation.html.haml (9.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:40 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:51:41 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:52:00 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (6.4ms)
+  Rendered layouts/_navigation.html.haml (40.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:52:01 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&search=&x=21&y=6" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "x"=>"21", "y"=>"6"}
+  [1m[32mSOLR Request (3.2ms)[0m  [ path=#<RSolr::Client:0x007fc3f8c907c0> parameters={data: [1m[1mfq=type%3AItem&start=0&rows=30&q=%2A%3A%2A[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, headers: [1m[1m{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}[0m, path: [1m[1mselect[0m, uri: [1m[1mhttp://localhost:8983/solr/select?wt=ruby[0m, open_timeout: [1m[1m[0m, read_timeout: [1m[1m[0m, retry_503: [1m[1m[0m, retry_after_limit: [1m[1m[0m} ]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" IN (1, 2, 3)
+  Rendered items/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.haml (9.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 0.2ms | Solr: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:52:26 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.haml (9.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:52:28 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&search=&x=30&y=3" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "x"=>"30", "y"=>"3"}
+  [1m[32mSOLR Request (3.2ms)[0m  [ path=#<RSolr::Client:0x007fc3f8c907c0> parameters={data: [1m[1mfq=type%3AItem&start=0&rows=30&q=%2A%3A%2A[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, headers: [1m[1m{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}[0m, path: [1m[1mselect[0m, uri: [1m[1mhttp://localhost:8983/solr/select?wt=ruby[0m, open_timeout: [1m[1m[0m, read_timeout: [1m[1m[0m, retry_503: [1m[1m[0m, retry_after_limit: [1m[1m[0m} ]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" IN (1, 2, 3)[0m
+  Rendered items/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.haml (39.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 0.2ms | Solr: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:53:17 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&search=&x=30&y=3" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "x"=>"30", "y"=>"3"}
+  [1m[32mSOLR Request (3.5ms)[0m  [ path=#<RSolr::Client:0x007fc3f8c907c0> parameters={data: [1m[1mfq=type%3AItem&start=0&rows=30&q=%2A%3A%2A[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, headers: [1m[1m{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}[0m, path: [1m[1mselect[0m, uri: [1m[1mhttp://localhost:8983/solr/select?wt=ruby[0m, open_timeout: [1m[1m[0m, read_timeout: [1m[1m[0m, retry_503: [1m[1m[0m, retry_after_limit: [1m[1m[0m} ]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" IN (1, 2, 3)
+  Rendered items/index.html.haml within layouts/application (2.4ms)
+Compiled application.css  (3ms)  (pid 44937)
+  Rendered layouts/_navigation.html.haml (31.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 103ms (Views: 89.8ms | ActiveRecord: 0.9ms | Solr: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:59:19 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:59:20 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (5.9ms)
+  Rendered layouts/_navigation.html.haml (35.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:59:21 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.haml within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.haml (9.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /cosmo/loader.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.css?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /font-awesome/font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/bootswatch.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /cosmo/bootswatch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cosmo/loader.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /cosmo/loader.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/magnifying_glass_small.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /magnifying_glass_small.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/basketball.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /basketball.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/toys.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /toys.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clothes.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /clothes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /food.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/office_supplies.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /office_supplies.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/electronics.png" for 127.0.0.1 at 2013-05-08 13:59:22 -0400
+Served asset /electronics.png - 304 Not Modified (0ms)
