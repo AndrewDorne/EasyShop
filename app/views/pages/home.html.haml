@@ -1,19 +1,23 @@
-%h1.welcome Welcome to EasyShop!
+- content_for :jumbotron do
+  %header.jumbotron.subhead{:style=>"background:#eee; margin-top:-10px; padding-top:30px; padding-bottom:30px; margin-bottom: 20px"}
+    .container
+      %h1 Welcome to EasyShop!
+      .lead An easy way to shop online
 
 / Row 1
 .row
   .span4.pagination-centered
     %a{:href => "search_results.html"}
       %img{:src => "assets/basketball.png", :width => "225"}
-    %h3{:style => "text-align: center;"} Sports/Outdoor
+      %h3.categories{:style => "text-align: center;"} Sports/Outdoor
   .span4.pagination-centered
     %a{:href => "#"}
       %img{:src => "assets/toys.png", :width => "225"}
-    %h3{:style => "text-align: center"} Toys
+      %h3.categories{:style => "text-align: center"} Toys
   .span4.pagination-centered
     %a{:href => "#"}
       %img{:src => "assets/clothes.png", :width => "225"}
-    %h3{:style => "text-align: center"} Clothes
+      %h3.categories{:style => "text-align: center"} Clothes
 
 / Row 2
 .row
@@ -28,12 +32,12 @@
   .span4.pagination-centered
     %a{:href => "#"}
       %img{:src => "assets/food.png", :width => "225"}
-    %h3{:style => "text-align: center"} Food
+      %h3.categories{:style => "text-align: center"} Food
   .span4.pagination-centered
     %a{:href => "#"}
       %img{:src => "assets/office_supplies.png", :width => "225"}
-    %h3{:style => "text-align: center"} Office Supplies
+      %h3.categories{:style => "text-align: center"} Office Supplies
   .span4.pagination-centered
     %a{:href => "#"}
       %img{:src => "assets/electronics.png", :width => "225"}
-    %h3{:tyle => "text-align: center"} Electronics
+      %h3.categories{:tyle => "text-align: center"} Electronics
