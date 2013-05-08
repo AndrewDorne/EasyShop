@@ -2,6 +2,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
+    @res_size = 'small'
     @search = Item.search do
       fulltext params[:search]
     end
@@ -14,7 +15,33 @@ class ItemsController < ApplicationController
   end
 
   def results
-    @items = Item.all
+    
+    @search = Item.search do
+      fulltext params[:search]
+    end
+    @items = @search.results
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @items }
+    end
+  end
+  def results_small
+   @search = Item.search do
+      fulltext params[:search]
+    end
+    @items = @search.results
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @items }
+    end
+  end
+  def results_large
+    @search = Item.search do
+      fulltext params[:search]
+    end
+    @items = @search.results
 
     respond_to do |format|
       format.html # index.html.erb
