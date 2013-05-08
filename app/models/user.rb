@@ -9,7 +9,6 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :first_name, :last_name, :email, :password, :password_confirmation, :remember_me
   
-  
   has_one :cart
   has_many :reviews
   has_many :comments
