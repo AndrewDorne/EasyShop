@@ -415,3 +415,19 @@ May 7, 2013 11:09:55 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=test&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=0 status=0 QTime=0 
 May 7, 2013 11:10:08 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=test&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=0 status=0 QTime=1 
+May 8, 2013 12:09:41 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=0 
+May 8, 2013 12:09:48 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
+May 8, 2013 12:09:51 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
+May 8, 2013 12:09:52 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
+May 8, 2013 12:09:54 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=0 
+May 8, 2013 12:09:55 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
+May 8, 2013 12:22:03 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={wt=ruby&start=0&fq=type:Item&q=*:*&rows=30} hits=1 status=0 QTime=1 
+May 8, 2013 12:49:20 AM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={wt=ruby&start=0&fq=type:Item&q=*:*&rows=30} hits=1 status=0 QTime=1 
