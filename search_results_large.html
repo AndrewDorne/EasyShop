@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>EasyShop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load style sheets -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- Load supplemental Javascript -->
+    <script type="text/javascript" src="resources/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/index.js"></script>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="/resources/css/search_results.css" />
+    <script>
+    $(function() {
+      var select = $( "#slider_div" );
+      var slider = $( "<div id='slider' style='width: 25%'></div>" ).insertAfter( select ).slider({
+        min: 1,
+        max: 3,
+        range: "min",
+        value: 2,
+        slide: function( event, ui ) {
+          select[ 0 ].selectedIndex = ui.value - 1;
+                      !!!! TO DO !!!! Put in redirect links
+          if (ui.value == 1) {
+            window.location("");
+          }
+          if (ui.value == 2) {
+            window.location("");
+          }
+          if (ui.value == 3) {
+            window.location("");
+          }
+        }
+      });
+      //$( "#minbeds" ).change(function() {
+        //slider.slider( "value", this.selectedIndex + 1 );
+      //});
+    });
+    </script>
+  </head>
+  <body>
+
+    <div id="wrap">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="index.html">EasyShop</a>
+          <form class="navbar-search pull-left offset3">
+            <input type="text" class="search-query" placeholder="Search">
+          </form>
+          <!-- The drop down menu -->
+          <ul class="nav pull-right">
+            <li><a href="profile.html">Hi Carol</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  <i class="icon-cog icon-large" style="padding-top:5px"></i><i class="icon-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu" style="padding: 15px;">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="profile.html">Profile</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Sign Out</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:40px">
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="span6">
+          <h2>Spalding</h2>
+          <img src="resources/img/spalding_nbaball.jpg" height="150" width="150">
+          <p>Take your game to the streets with Spalding NBA Street performance outdoor basketball,designed specifically to withstand the rough-and-tumble street game. This basketball has a durable cover and structure to stand up to rigorous pick up games at the park or in the driveway.</p>
+          <p><a class="btn" href="product_page.html">View details &raquo;</a><a class="btn item_add">Add to cart</a></p>
+        </div>
+        <div id="slider_div" name="slider_div" class="span6">
+          <h2>Molten</h2>
+          <img src="resources/img/molten_basketball.jpg" height="150" width="150">
+          <p>GM7, PU Cover, 12-panel 2-tone International Design, Indoor/outdoor, FIBA Replica</p>
+          <p><a class="btn" href="product_page.html">View details &raquo;</a><a class="btn item_add">Add to cart</a></p>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="span6">
+          <h2>Wilson</h2>
+          <img src="resources/img/wilson_basketball.jpg" height="150" width="150">
+          <p>Wilson leads the basketball industry in technological advances so it is no wonder why the Wilson Evolution is the best selling high school game ball in the country. </p>
+          <p><a class="btn" href="product_page.html">View details &raquo;</a><a class="btn item_add">Add to cart</a></p>
+        </div>
+        <div class="span6">
+          <h2>Nike</h2>
+          <img src="resources/img/nike_basketball.jpg" height="150" width="150">
+          <p>Wraparound panel construction for improved shooting groove and consistent touch</p>
+          <p><a class="btn" href="product_page.html">View details &raquo;</a><a class="btn item_add">Add to cart</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+        <div id="footer"> 
+          <div class="container">
+            <p class="muted credit">&copy; EasyShop 2013</p>
+          </div>
+        </div>
+  </body>
+</html>
+
