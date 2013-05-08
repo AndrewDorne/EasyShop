@@ -1,4 +1,4 @@
-.navbar.navbar-fixed-top
+.navbar.navbar-fixed-top.navbar-inverse
   %nav.navbar-inner
     .container
       %a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
@@ -11,10 +11,11 @@
         %ul.nav
         - if user_signed_in? 
           %ul.nav.pull-right
-
+            %li Hi #{current_user.first_name}
         - else
           %ul.nav.pull-right
-            %li=link_to "Sign Up", "/users/sign_up"
+            %li
+              %a{:href=>"#SignUp", "data-toggle"=>"modal"} Sign Up
             %li.divider-vertical
             %li.dropdown
               %a.dropdown-toggle{:href=>"#", "data-toggle"=>"dropdown"}
@@ -24,7 +25,24 @@
                 = simple_form_for resource, :as => resource_name,
                     :url => "/users/sign_in", :style=>"padding-bottom:10px" do |f|
                   = f.input_field :email, :label => false, :placeholder => "Email"
-                  = f.input_field :password, :label => false, :placeholder => "Password"
+                  = f.input_field :password, :label => false,
+                      :placeholder => "Password"
                   = f.input :remember_me, :as => "boolean", :class => "checkbox",
                       :inline_label => "Remember me", :label => false
-                  = f.button :submit, :class => 'btn btn-primary', :value => "Sign In", :style=>"width:100%"
+                  = f.button :submit, :class => 'btn btn-primary',
+                      :value => "Sign In", :style=>"width:100%"
+- if not user_signed_in?
+  .modal.hide.fade#SignUp{"tab-index"=>"-1", :role=>"dialog",
+    "aria-labelledby"=>"myModalLabel", "aria-hidden"=>"true", :style=>"width:500px; margin-left:-250px; margin-right:-"}
+    %div{:class=>"modal-header"}
+      %button{:class=>"close", "data-dismiss"=>"modal", "aria-hidden"=>"true"}×
+      #SignUp.lead{:style=>"margin-bottom:0px"} Sign Up
+    %div{:class=>"modal-body"}
+      = simple_form_for resource, :as => resource_name,
+        :url => "/users", :html=>{:class=>"form-horizontal"} do |f|
+        = f.input :first_name
+        = f.input :last_name
+        = f.input :email
+        = f.input :password
+        = f.input :password_confirmation 
+        = f.button :submit, :class => 'btn btn-primary pull-right', :value => "Sign Up"
