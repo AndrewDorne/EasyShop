@@ -5,6 +5,8 @@ EasyShop::Application.routes.draw do
   resources :items do
     collection do
       get 'results'
+      get 'results_small'
+      get 'results_large'
     end
   end	
 
