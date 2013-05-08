@@ -38,7 +38,7 @@
           <p style="padding-top: 15px;"><%= @items[-($i-@items.count)].description %></p>
 	<h2 style="padding-top:0px; font-size:4em; float:right;"> $<%= @items[-($i-@items.count)].price %> </h2>
 			<div class="btn-group" style="float:right;">
-					<button class="btn btn-large" href="product_page.html">More Information</button>
+					<%= link_to "More Information", @items[-($i-@items.count)], :class => 'btn btn-large' %>
 					<button class="btn btn-primary btn-large">Add to Cart</button>
     			</div>
         </div>
