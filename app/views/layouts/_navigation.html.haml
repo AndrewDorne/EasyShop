@@ -9,9 +9,11 @@
       = link_to "EasyShop", root_path, :class => "brand"
       .nav-collapse
         %ul.nav
-          = form_tag items_path, :class => "navbar-search pull-left", :method => :get do
-            = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
-            = submit_tag "Search", :name => nil
+          %li.divider-vertical
+        = form_tag items_path, :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
+          = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
+          = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
+            %i.icon-white
 
         - if user_signed_in? 
           %ul.nav.pull-right
