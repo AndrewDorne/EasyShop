@@ -17,8 +17,12 @@ body {
   padding-top:60px
 }
 
-h1 {
+h1, h3 {
   text-align: center;
+}
+
+.welcome {
+  margin-bottom: 20px;
 }
 
 #search {
@@ -31,6 +35,10 @@ h1 {
   width: auto;
 }
 
+#search-bar-home-form {
+  border-radius: 0;
+}
+
 .btn-group {
   display: inline-block;
 }
@@ -41,26 +49,29 @@ h1 {
 
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -5.7em;
-  overflow: hidden;
-  z-index: 0;
+  margin: 0 auto -4em;
 }
 
 #footer, .push {
   text-align: center;
-  height: 4em;
   clear: both;
-  z-index: 10;
 }
 
 #footer {
+  position: fixed;
+  height: 1.6em;
   color: #fff;
   background-color: #0072e6;
+  bottom: 0;
+  width: 100%;
+}
+
+.push {
+  height: 3em;
 }

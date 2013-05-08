@@ -1,7 +1,6 @@
 # OS generated files #
 ######################
 .DS_Store
-<<<<<<< HEAD
 
 # Ignore bundler config
 /.bundle
@@ -18,8 +17,3 @@
 
 # Ignore vim back-up files
 *.swp
-=======
-db/*.sqlite3
-log/*.log
-tmp/*
->>>>>>> 9c803499530133f7eeb3ce45ce95c561bc463211
