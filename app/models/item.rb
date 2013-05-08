@@ -1,8 +1,10 @@
 class Item < ActiveRecord::Base
-  attr_accessible :brand, :description, :name, :price
+  attr_accessible :brand, :description, :name, :price, :category
 
-  has_and_belongs_to_many :categories
+  belongs_to :category
+
   searchable do
     text :name
+    text :category
   end
 end

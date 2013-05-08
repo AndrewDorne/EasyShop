@@ -1,6 +1,22 @@
 # OS generated files #
 ######################
 .DS_Store
-db/*.sqlite3
-log/*.log
-tmp/**/*
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp
+
+# Ignore cache
+.sass-cache/
+
+# Ignore vim back-up files
+*.swp
+
+# Solr
+solr/data

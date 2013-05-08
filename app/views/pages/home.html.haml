@@ -1,1 +1,43 @@
-%h1 Welcome to EasyShop!
+- content_for :jumbotron do
+  %header.jumbotron.subhead
+    .container
+      %h1 Welcome to EasyShop!
+      .lead An easy way to shop online
+
+/ Row 1
+.row
+  .span4.pagination-centered
+    %a{:href => "items?search=outdoor"}
+      %img{:src => "assets/basketball.png", :width => "175"}
+      %h3.categories{:style => "text-align: center;"} Sports/Outdoor
+  .span4.pagination-centered
+    %a{:href => "items?search=toys"}
+      %img{:src => "assets/toys.png", :width => "175"}
+      %h3.categories{:style => "text-align: center"} Toys
+  .span4.pagination-centered
+    %a{:href => "items?search=clothes"}
+      %img{:src => "assets/clothes.png", :width => "175"}
+      %h3.categories{:style => "text-align: center"} Clothes
+
+/ Row 2
+.row.search-row
+  .span6.offset3.pagination-centered
+    = form_tag items_path, :id => "search-bar-home", :class => "navbar-search", :method => :get do
+      = text_field_tag :search, params[:search], :id => "search-bar-home-form", :class => "search-query search-bar-home span5", :placeholder => "Search"
+      = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
+        %i.icon-white
+
+/ Row 3
+.row
+  .span4.pagination-centered
+    %a{:href => "items?search=food"}
+      %img{:src => "assets/food.png", :width => "175"}
+      %h3.categories{:style => "text-align: center"} Food
+  .span4.pagination-centered
+    %a{:href => "items?search=office"}
+      %img{:src => "assets/office_supplies.png", :width => "175"}
+      %h3.categories{:style => "text-align: center"} Office Supplies
+  .span4.pagination-centered
+    %a{:href => "items?search=electronics"}
+      %img{:src => "assets/electronics.png", :width => "175"}
+      %h3.categories{:tyle => "text-align: center"} Electronics

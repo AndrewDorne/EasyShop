@@ -20,6 +20,7 @@
   %body
     #wrap
       = render 'layouts/navigation'
+      = yield(:jumbotron)
       #main{:role => "main"}
         = render 'layouts/messages'
         .container
