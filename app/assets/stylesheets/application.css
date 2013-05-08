@@ -26,9 +26,11 @@ body {
 }
 
 .jumbotron {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 40px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background: #eee;
 }
 
 #search {
@@ -76,9 +78,9 @@ html, body {
 
 #footer {
   position: fixed;
-  height: 1.6em;
-  color: #fff;
-  background-color: #0072e6;
+  height: 1.5em;
+  color: #888;
+  background-color: #cce5ff;
   bottom: 0;
   width: 100%;
 }
