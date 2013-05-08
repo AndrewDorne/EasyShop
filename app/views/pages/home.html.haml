@@ -1,2 +1,6 @@
-%h1 Pages#home
-%p Find me in app/views/pages/home.html.haml
+<%= form_tag articles_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
