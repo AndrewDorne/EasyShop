@@ -25,28 +25,27 @@
     <script>
     $(function() {
       var select = $( "#slider_div" );
-      var slider = $( "<div id='slider' style='width: 25%'></div>" ).insertAfter( select ).slider({
+      var slider = $( "<div id='slider' class='span6 offset3'></div>" ).insertAfter( select ).slider({
         min: 1,
         max: 3,
         range: "min",
-        value: 2,
+        value: select[0].selectedIndex+1,
         slide: function( event, ui ) {
           select[ 0 ].selectedIndex = ui.value - 1;
-                      !!!! TO DO !!!! Put in redirect links
           if (ui.value == 1) {
-            window.location("");
+            document.location.href = "index.html";
           }
           if (ui.value == 2) {
-            window.location("");
+            document.location.href = "index.html";
           }
           if (ui.value == 3) {
-            window.location("");
+            document.location.href = "index.html";
           }
         }
       });
-      //$( "#minbeds" ).change(function() {
-        //slider.slider( "value", this.selectedIndex + 1 );
-      //});
+      $( "#slider_div" ).change(function() {
+        slider.slider( "value", this.selectedIndex + 1 );
+      });
     });
     </script>
   </head>
@@ -81,6 +80,21 @@
         </div>
       </div>
     </div>
+    
+    <!--slider-->
+    <div class="container" style="padding-top:60px; text-align: center;">
+      <div class="row" style="text-align: center">
+        <form id="resizing">
+          <label for="slider_div">Resize search results</label>
+            <select id="slider_div" name="slider_div" class="span4 offset4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </form>
+      </div>
+    </div>
+      
 
     <div class="container" style="padding-top:60px">
       <!-- Row 1 -->
@@ -92,7 +106,7 @@
           <p style="padding-top: 25px;">Take your game to the streets with Spalding NBA Street performance outdoor basketball,designed specifically to withstand the rough-and-tumble street game. This basketball has a durable cover and structure to stand up to rigorous pick up games at the park or in the driveway.</p>
           <p><a class="btn" href="product_page.html">View details &raquo;</a><a class="btn item_add">Add to cart</a></p>
         </div>
-        <div id="slider_div" name="slider_div" class="span6">
+        <div class="span6">
           <h2>Molten</h2>
           <img src="resources/img/molten_basketball.jpg" height="150" width="150">
             <h2 style="display:inline; padding-left:50px; font-size: 4em"> $27.50 </h2>
