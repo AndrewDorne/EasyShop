@@ -19,4 +19,5 @@
 *.swp
 
 # Solr
-solr/data
+solr/data/**/*
+solr/pids/**/*

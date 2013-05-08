@@ -1,6 +1,19 @@
 EasyShop::Application.routes.draw do
 
+  devise_for :users
+
   root :to=>"pages#home"
+
+  devise_for :users, :controllers => { :registrations => "registrations",
+                                       :sessions => "sessions" }
+
+  resources :comments, :reviews, :categories, :items
+
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    delete "/logout" => "devise/sessions#destroy"
+    get "/sign_up" => "devise/registrations#new"
+  end
 
   resources :items do
     collection do
@@ -11,19 +24,6 @@ EasyShop::Application.routes.draw do
     end
   end	
 
-
-  resources :comments, :reviews, :categories, :items
- 
-
-
-  devise_for :users, :controllers => { :registrations => "registrations",
-                                       :sessions => "sessions" }
-
-  devise_scope :user do
-    get "/login" => "devise/sessions#new"
-    delete "/logout" => "devise/sessions#destroy"
-    get "/sign_up" => "devise/registrations#new"
-  end
 
 
   
