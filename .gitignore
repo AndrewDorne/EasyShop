@@ -17,3 +17,6 @@
 
 # Ignore vim back-up files
 *.swp
+
+# Solr
+solr/data
