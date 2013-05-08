@@ -4,13 +4,17 @@ EasyShop::Application.routes.draw do
 
   resources :items do
     collection do
+      get 'index'
       get 'results'
       get 'results_small'
       get 'results_large'
     end
   end	
 
+
   resources :comments, :reviews, :categories, :items
+ 
+
 
   devise_for :users, :controllers => { :registrations => "registrations",
                                        :sessions => "sessions" }

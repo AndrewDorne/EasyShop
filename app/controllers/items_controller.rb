@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @res_size = params[:resize]
+    @res_size = 'small'
     @search = Item.search do
       fulltext params[:search]
     end

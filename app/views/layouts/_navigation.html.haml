@@ -11,7 +11,7 @@
         %ul.nav
           %li.divider-vertical
         = form_tag items_path, :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
-          = text_field_tag :results_small, params[:search], :class => "search-query span3", :placeholder => "Search"
+          = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
           = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
             %i.icon-white
 
