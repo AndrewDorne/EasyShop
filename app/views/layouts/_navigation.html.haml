@@ -9,7 +9,6 @@
       = link_to "EasyShop", root_path, :class => "brand"
       .nav-collapse
         %ul.nav
-        - if not_home?
           %li.divider-vertical
         = form_tag items_path, :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
           = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
