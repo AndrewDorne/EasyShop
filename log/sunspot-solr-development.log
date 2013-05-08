@@ -662,3 +662,5 @@ May 8, 2013 1:52:15 AM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={wt=ruby&start=0&fq=type:Item&q=*:*&rows=30} hits=3 status=0 QTime=2 
 May 8, 2013 4:27:54 AM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={wt=ruby&start=0&fq=type:Item&q=*:*&rows=30} hits=3 status=0 QTime=0 
+May 8, 2013 12:36:59 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={wt=ruby&start=0&fq=type:Item&q=*:*&rows=30} hits=3 status=0 QTime=1 
