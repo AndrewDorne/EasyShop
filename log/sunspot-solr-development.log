@@ -399,3 +399,7 @@ May 7, 2013 9:57:25 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=test&qf=name_text+description_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=0 status=0 QTime=1 
 May 7, 2013 9:57:32 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text+description_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
+May 7, 2013 10:52:41 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=test&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=0 status=0 QTime=0 
+May 7, 2013 10:52:49 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=basketball&qf=name_text&wt=ruby&fq=type:Item&defType=dismax&rows=30} hits=1 status=0 QTime=1 
