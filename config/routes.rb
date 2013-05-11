@@ -7,7 +7,7 @@ EasyShop::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => "registrations",
                                        :sessions => "sessions" }
 
-  resources :comments, :reviews, :categories, :items
+  resources :comments, :reviews, :categories, :items, :charges
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"
