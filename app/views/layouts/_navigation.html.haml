@@ -23,8 +23,7 @@
                 %b.caret
               %ul.dropdown-menu
                 %li
-                  -# Currently broken but should go to an information page?
-                  -# = link_to 'Profile', current_user
+                  = link_to 'Profile', user_path(current_user)
                 -# %li
                 -#   = link_to 'Edit account', edit_user_registration_path
                 -# %li.divider
