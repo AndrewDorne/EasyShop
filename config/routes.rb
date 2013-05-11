@@ -7,22 +7,23 @@ EasyShop::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => "registrations",
                                        :sessions => "sessions" }
 
+  resources :items do
+    collection do
+      get 'index'
+      get 'results'
+    end
+  end
+
   resources :comments, :reviews, :categories, :items
+
+  match 'items/results/:rsize/:search' => "items#results"
+
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"
     delete "/logout" => "devise/sessions#destroy"
     get "/sign_up" => "devise/registrations#new"
   end
-
-  resources :items do
-    collection do
-      get 'index'
-      get 'results'
-      get 'results_small'
-      get 'results_large'
-    end
-  end	
 
 
 

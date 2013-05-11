@@ -1,26 +1,29 @@
 <head>
 <script>
     $(function() {
+      var search_term = "<%= @sterm %>";
       var select = $( "#slider_div" );
+      var r_size = "<%= @rsize %>";
+            console.log(r_size);
       var slider = $( "<div id='slider' class='span6 offset3'></div>" ).insertAfter( select ).slider({
         min: 1,
         max: 3,
         range: "min",
-        value: 2,
-	change: function( event, ui ) {
+        value: r_size,
+        change: function( event, ui ) {
           select[ 0 ].selectedIndex = ui.value - 1;
           if (ui.value == 1) {
-            document.location.href = "results_small.html";
+            document.location.href = "/items/results/1/" + search_term;
           }
           if (ui.value == 2) {
-            document.location.href = "results.html";
+            document.location.href = "/items/results/2/" + search_term;
           }
           if (ui.value == 3) {
-            document.location.href = "results_large.html";
-          }
+            document.location.href = "/items/results/3/" + search_term;
+          }	
 		
         }
-      });
+	});
       $( "#slider_div" ).change(function() {
         slider.slider( "value", this.selectedIndex + 1 );
       });
@@ -32,12 +35,41 @@
       <div class="row" style="text-align: center">
         <form id="resizing">
           <label for="slider_div">Resize search results</label>
-            <select id="slider_div" selected="Medium" name="slider_div" class="span4 offset4">
+            <select id="slider_div" name="slider_div" class="span4 offset4">
+	      <% if @rsize == "1" %>
+              <option  selected="selected">Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+	<% end %>
+	<% if @rsize == "2" %>
               <option>Small</option>
               <option selected="selected">Medium</option>
               <option>Large</option>
+	<% end %>
+	<% if @rsize == "3" %>
+              <option>Small</option>
+              <option>Medium</option>
+              <option selected="selected">Large</option>
+	<% end %>
             </select>
           </form>
       </div>
     </div>
+
+<% if @rsize == "1" %>
+<%= render "results_small" %>
+<% end %>
+
+<% if @rsize == "2" %>
 <%= render "results_med" %>
+<% end %>
+
+<% if @rsize == "3" %>
+<%= render "results_large" %>
+<% end %>
+
+<% if @rsize.blank? %>
+<%= render "results_med" %>
+<% end %>
+
+
