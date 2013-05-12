@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 gem 'thin'
 
-gem 'seed_dumper'
+gem 'seed_dump'
 
 # Gems used only for assets and not required
 # in production environments by default.
