@@ -1,5 +1,7 @@
 EasyShop::Application.routes.draw do
 
+  resources :carts
+
   root :to=>"pages#home"
 
   resources :comments, :reviews, :categories, :items, :users
