@@ -10,7 +10,7 @@
       .nav-collapse
         %ul.nav
           %li.divider-vertical
-        = form_tag items_path, :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
+        = form_tag '/items/results', :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
           = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
           = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
             %i.icon-white
@@ -23,7 +23,8 @@
                 %b.caret
               %ul.dropdown-menu
                 %li
-                  = link_to 'Profile', user_path(current_user)
+                  -# Currently broken but should go to an information page?
+                  -# = link_to 'Profile', current_user
                 -# %li
                 -#   = link_to 'Edit account', edit_user_registration_path
                 -# %li.divider
