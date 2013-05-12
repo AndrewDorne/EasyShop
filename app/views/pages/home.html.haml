@@ -6,7 +6,7 @@
 
 / Row 1
 .row
-  %a{:href => "items?search=outdoor"}
+  %a{:href => "items/results?search=outdoor"}
     .span4.pagination-centered.category
       %img{:src => "assets/basketball.png", :width => "175"}
       %h3.categories{:style => "text-align: center;"} Sports/Outdoor
@@ -22,7 +22,7 @@
 / Row 2
 .row.search-row
   .span6.offset3.pagination-centered
-    = form_tag items_path, :id => "search-bar-home", :class => "navbar-search", :method => :get do
+    = form_tag '/items/results', :id => "search-bar-home", :class => "navbar-search", :method => :get do
       = text_field_tag :search, params[:search], :id => "search-bar-home-form", :class => "search-query search-bar-home span5", :placeholder => "Search"
       = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
         %i.icon-white
