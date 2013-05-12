@@ -1,5 +1,8 @@
 EasyShop::Application.routes.draw do
 
+  resources :carts
+
+  root :to=>"pages#home"
   devise_for :users
 
   root :to=>"pages#home"
@@ -14,7 +17,7 @@ EasyShop::Application.routes.draw do
     end
   end
 
-  resources :comments, :reviews, :categories, :items
+  resources :comments, :reviews, :categories, :items, :charges, :users
 
   match 'items/results/:rsize/:search' => "items#results"
 
