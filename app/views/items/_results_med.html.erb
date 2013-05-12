@@ -33,7 +33,7 @@
 		<% while $j < $numColumns and $i > 0 do %> 
         <div class="span5 well" style= "border:5px solid #eee;">
           <h2><%= @items[-($i-@items.count)].name %></h2>
-          <img src="http://cdn4.iconfinder.com/data/icons/Primo_Icons/PNG/128x128/shopping_cart.png" style="height:250px;width:250px;">
+          <img src="<%= @items[-($i-@items.count)].image %>" style="height:250px;width:250px;">
             
           <p style="padding-top: 15px;"><%= @items[-($i-@items.count)].description %></p>
 	<h2 style="padding-top:0px; font-size:4em; float:right;"> $<%= @items[-($i-@items.count)].price %> </h2>
