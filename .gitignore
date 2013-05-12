@@ -21,3 +21,6 @@
 # Solr
 solr/data/**/*
 solr/pids/**/*
+
+# Ignore Gemfile.lock
+Gemfile.lock
