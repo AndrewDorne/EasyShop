@@ -14,7 +14,7 @@
  */
 
 body {
-  padding-top:60px
+  padding-top: 60px;
 }
 
 .welcome, .categories{
@@ -72,6 +72,7 @@ html, body {
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
+  background: #fff;
 }
 
 #footer, .push {
@@ -90,4 +91,19 @@ html, body {
 
 .push {
   height: 3em;
+}
+
+.category, .item-result {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-style: solid;
+  border-top-width: 1px;
+  border-top-color: #ccc;
+  border-left-width: 1px;
+  border-left-color: #ccc;
+  border-right-width: 1px;
+  border-right-color: #000;
+  border-bottom-width: 1px;
+  border-bottom-color: #000;
+  background: #eee;
 }

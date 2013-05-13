@@ -87,6 +87,7 @@ GEM
     multi_json (1.7.3)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     pr_geohash (1.0.0)
     rack (1.4.5)
@@ -119,6 +120,7 @@ GEM
       mime-types (>= 1.16)
     rsolr (1.0.9)
       builder (>= 2.1.2)
+    seed_dump (0.4.3)
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -171,7 +173,9 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   less-rails
+  pg
   rails (= 3.2.8)
+  seed_dump
   simple_form
   sqlite3
   stripe!

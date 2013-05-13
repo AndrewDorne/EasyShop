@@ -2,7 +2,6 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @res_size = 'small'
     @search = Item.search do
       fulltext params[:search]
     end
@@ -15,7 +14,11 @@ class ItemsController < ApplicationController
   end
 
   def results
-    
+    @rsize = params[:rsize]
+    if @rsize.blank?
+       @rsize = "2"
+    end
+    @sterm = params[:search]
     @search = Item.search do
       fulltext params[:search]
     end
