@@ -31,7 +31,7 @@
     <div class="row">
 		<% $j = 0 %>
 		<% while $j < $numColumns and $i > 0 do %> 
-        <div class="span10 well" style= "border:5px solid #eee;">
+        <div class="span10 well item-result" style= "border:5px solid #eee;">
           <h2><%= @items[-($i-@items.count)].name %></h2>
           <img src="<%= @items[-($i-@items.count)].image %>" style="height:250px;width:250px;">
             

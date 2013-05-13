@@ -90,7 +90,7 @@ html, body {
   height: 3em;
 }
 
-.category {
+.category, .item-result {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   border-style: solid;
