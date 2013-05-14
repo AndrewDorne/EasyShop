@@ -32,18 +32,17 @@
     <div class="row" >
 		<% $j = 0 %>
 		<% while $j < $numColumns and $i > 0 do %> 
-        <div class="span4 well item-result">
+        <div class="span4 well item-result" style="height:475px;position:relative;">
           <h2><%= link_to truncate(@items[-($i-@items.count)].name, :length => 25, :separator => ' '), @items[-($i-@items.count)] %></h2>
           <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:200px;width:200px;'), @items[-($i-@items.count)] %>
             
           <p style="padding-top: 25px; "><%= truncate(@items[-($i-@items.count)].description, :length => 200, :separator => ' ') %><%= link_to "        Read More>", @items[-($i-@items.count)] %></p>
-	<h2 style="padding-left:0px font-size:2em;"> $<%= @items[-($i-@items.count)].price %>
-			<div class="btn-group" style="float:right;margin-left:200px;">
+	<h2 style="padding-left:0px font-size:2em;"> $<%= @items[-($i-@items.count)].price %> </h2>
+			<div class="btn-group" style="margin-left:145px;position:absolute;top:93%;">
 					<%= link_to "More Information", @items[-($i-@items.count)], :class => 'btn btn-small' %>
 					<%= link_to "Add to Cart", '#', :class => 'btn btn-primary btn-small' %>
     			</div>
         </div>
-	</h2>
 		<% $i -= 1 %>
 		<% $j += 1 %>
 		<% end %>
