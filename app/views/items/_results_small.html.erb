@@ -14,6 +14,7 @@
     <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="resources/js/index.js"></script>
 
+
     <meta charset="utf-8" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -28,16 +29,16 @@
 		$k = 0
 	%>
     <% while $k < $numRows and $i > 0  do %>
-    <div class="row">
+    <div class="row" >
 		<% $j = 0 %>
 		<% while $j < $numColumns and $i > 0 do %> 
         <div class="span4 well item-result">
-          <h2><%= link_to @items[-($i-@items.count)].name, @items[-($i-@items.count)] %></h2>
+          <h2><%= link_to truncate(@items[-($i-@items.count)].name, :length => 25, :separator => ' '), @items[-($i-@items.count)] %></h2>
           <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:200px;width:200px;'), @items[-($i-@items.count)] %>
             
-          <p style="padding-top: 25px; "><%= @items[-($i-@items.count)].description %></p>
+          <p style="padding-top: 25px; "><%= truncate(@items[-($i-@items.count)].description, :length => 200, :separator => ' ') %><%= link_to "        Read More>", @items[-($i-@items.count)] %></p>
 	<h2 style="padding-left:0px font-size:2em;"> $<%= @items[-($i-@items.count)].price %>
-			<div class="btn-group" style="float:right;">
+			<div class="btn-group" style="float:right;margin-left:200px;">
 					<%= link_to "More Information", @items[-($i-@items.count)], :class => 'btn btn-small' %>
 					<%= link_to "Add to Cart", @items[-($i-@items.count)] %><button class="btn btn-primary btn-small">Add to Cart</button>
     			</div>

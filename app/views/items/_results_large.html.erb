@@ -28,14 +28,14 @@
 		$k = 0
 	%>
     <% while $k < $numRows and $i > 0  do %>
-    <div class="row">
+    <div class="row" style="margin-top:50px">
 		<% $j = 0 %>
 		<% while $j < $numColumns and $i > 0 do %> 
-        <div class="span10 well item-result" style= "border:5px solid #eee;">
+        <div class="span10 well item-result" style= "border:5px solid #eee;float: none;margin-left: auto;margin-right: auto; height:550px;">
           <h2><%= link_to @items[-($i-@items.count)].name, @items[-($i-@items.count)] %></h2>
-          <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:250px;width:250px;'), @items[-($i-@items.count)] %>
+          <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:250px ;width:250px;'), @items[-($i-@items.count)] %>
             
-          <p style="padding-top: 15px;"><%= @items[-($i-@items.count)].description %></p>
+          <p style="padding-top: 15px;"><%= truncate(@items[-($i-@items.count)].description, :length => 500, :separator => ' ') %></p>
 	<h2 style="padding-top:0px; font-size:4em; float:left;"> $<%= @items[-($i-@items.count)].price %> </h2>
 			<div class="btn-group" style="float:right;"><%= link_to "More Information", @items[-($i-@items.count)], :class => 'btn btn-large' %>
 					<%= link_to "Add to Cart", @items[-($i-@items.count)] %><button class="btn btn-primary btn-large">Add to Cart</button>
