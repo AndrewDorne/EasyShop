@@ -21,7 +21,7 @@ class CartsController < ApplicationController
     end
   end
 
-  def add
+  def add_to_cart
     @cart = Cart.find(params[:id])
     @item = Item.find(params[:item_id])
     @qty = params[:qty]

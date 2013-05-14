@@ -5,6 +5,6 @@ class Item < ActiveRecord::Base
   searchable do
     text :name
     text :brand
-    integer :category_ids, :multiple => true
+    integer :category_ids, :multiple => true, :references => Category
   end
 end
