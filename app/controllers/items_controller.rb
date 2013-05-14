@@ -4,7 +4,6 @@ class ItemsController < ApplicationController
   def index
     @search = Item.search do
       fulltext params[:search]
-      with(:category_ids, params[:category_ids])
     end
     @items = @search.results
 
@@ -22,6 +21,7 @@ class ItemsController < ApplicationController
     @sterm = params[:search]
     @search = Item.search do
       fulltext params[:search]
+      with(:category_ids, params[:category_ids])
     end
     @items = @search.results
 
