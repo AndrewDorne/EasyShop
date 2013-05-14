@@ -21,6 +21,16 @@ class CartsController < ApplicationController
     end
   end
 
+  def add
+    @cart = Cart.find(params[:id])
+    @item = Item.find(params[:item_id])
+    @qty = params[:qty]
+
+    @qty.times do
+      @cart.items << @item
+    end
+  end
+
   # GET /carts/new
   # GET /carts/new.json
   def new
