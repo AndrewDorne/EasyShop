@@ -1,54 +1,48 @@
 .navbar.navbar-fixed-top.navbar-inverse
   %nav.navbar-inner
     .container
-      %a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-
       = link_to "EasyShop", root_path, :class => "brand"
-      .nav-collapse
-        %ul.nav
-          %li.divider-vertical
-        = form_tag '/items/results', :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
-          = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
-          = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
-            %i.icon-white
+      %ul.nav
+        %li.divider-vertical
+      = form_tag '/items/results', :id => "search-bar", :class => "navbar-search pull-left", :method => :get do
+        = text_field_tag :search, params[:search], :class => "search-query span3", :placeholder => "Search"
+        = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
+          %i.icon-white
 
-        - if user_signed_in? 
-          %ul.nav.pull-right
-            %li.dropdown
-              %a.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
-                = "#{current_user.first_name.titleize} #{current_user.last_name.titleize}"
-                %b.caret
-              %ul.dropdown-menu
-                %li
-                  -# Currently broken but should go to an information page?
-                  -# = link_to 'Profile', current_user
-                -# %li
-                -#   = link_to 'Edit account', edit_user_registration_path
-                -# %li.divider
-                %li
-                  = link_to "Sign Out", destroy_user_session_path, :method=>'delete'
-        - else
-          %ul.nav.pull-right
-            %li
-              %a{:href=>"#SignUp", "data-toggle"=>"modal"} Sign Up
-            %li.divider-vertical
-            %li.dropdown
-              %a.dropdown-toggle{:href=>"#", "data-toggle"=>"dropdown"}
-                Sign In
-                %b.caret
-              %ul.dropdown-menu{:style=>"padding:15px; padding-bottom:0px"}
-                = simple_form_for resource, :as => resource_name,
-                    :url => "/users/sign_in", :style=>"padding-bottom:10px" do |f|
-                  = f.input_field :email, :label => false, :placeholder => "Email"
-                  = f.input_field :password, :label => false,
-                      :placeholder => "Password"
-                  = f.input :remember_me, :as => "boolean", :class => "checkbox",
-                      :inline_label => "Remember me", :label => false
-                  = f.button :submit, :class => 'btn btn-primary',
-                      :value => "Sign In", :style=>"width:100%"
+      - if user_signed_in? 
+        %ul.nav.pull-right
+          %li.dropdown
+            %a.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
+              = "#{current_user.first_name.titleize} #{current_user.last_name.titleize}"
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                -# Currently broken but should go to an information page?
+                -# = link_to 'Profile', current_user
+              -# %li
+              -#   = link_to 'Edit account', edit_user_registration_path
+              -# %li.divider
+              %li
+                = link_to "Sign Out", destroy_user_session_path, :method=>'delete'
+      - else
+        %ul.nav.pull-right
+          %li
+            %a{:href=>"#SignUp", "data-toggle"=>"modal"} Sign Up
+          %li.divider-vertical
+          %li.dropdown
+            %a.dropdown-toggle{:href=>"#", "data-toggle"=>"dropdown"}
+              Sign In
+              %b.caret
+            %ul.dropdown-menu{:style=>"padding:15px; padding-bottom:0px"}
+              = simple_form_for resource, :as => resource_name,
+                  :url => "/users/sign_in", :style=>"padding-bottom:10px" do |f|
+                = f.input_field :email, :label => false, :placeholder => "Email"
+                = f.input_field :password, :label => false,
+                    :placeholder => "Password"
+                = f.input :remember_me, :as => "boolean", :class => "checkbox",
+                    :inline_label => "Remember me", :label => false
+                = f.button :submit, :class => 'btn btn-primary',
+                    :value => "Sign In", :style=>"width:100%"
 - if not user_signed_in?
   .modal.hide.fade#SignUp{"tab-index"=>"-1", :role=>"dialog",
     "aria-labelledby"=>"myModalLabel", "aria-hidden"=>"true", :style=>"width:500px; margin-left:-250px; margin-right:-"}
