@@ -99,7 +99,7 @@ html, body {
   height: 3em;
 }
 
-.category {
+.category, .item-result {
   background: #eee;
   -moz-box-shadow: 0 5px 10px -2px gray;
   -webkit-box-shadow: 0 5px 10px -2px gray;
