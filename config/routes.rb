@@ -17,8 +17,7 @@ EasyShop::Application.routes.draw do
 
   match 'items/results/:rsize/:search' => "items#results"
   match 'items/results/:rsize' => "items#results"
-  match 'items/results' => 'items#index'
-
+  # match '/items#index' => redirect("items#results")
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"
