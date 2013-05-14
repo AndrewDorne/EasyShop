@@ -21,7 +21,9 @@ class ItemsController < ApplicationController
     @sterm = params[:search]
     @search = Item.search do
       fulltext params[:search]
-      with(:category_ids, params[:category_ids])
+      if params[:category_ids]
+        with(:category_ids, params[:category_ids])
+      end
     end
     @items = @search.results
 
