@@ -20,6 +20,7 @@ EasyShop::Application.routes.draw do
   resources :comments, :reviews, :categories, :items, :charges, :users
 
   match 'items/results/:rsize/:search' => "items#results"
+  match 'items/results/:rsize' => "items#results"
 
 
   devise_scope :user do
