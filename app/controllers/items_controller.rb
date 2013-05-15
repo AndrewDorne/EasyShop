@@ -18,12 +18,24 @@ class ItemsController < ApplicationController
     if @rsize.blank?
        @rsize = "2"
     end
+    num_per_page = 1
+    if @rsize == "1"
+       num_per_page = 9
+    end
+    if @rsize == "2"
+       num_per_page = 4
+    end
+    if @rsize == "3"
+       num_per_page = 2
+    end
+
     @sterm = params[:search]
     @search = Item.search do
       fulltext params[:search]
       if params[:category_ids]
         with(:category_ids, params[:category_ids])
       end
+      paginate :page => params[:page], :per_page => num_per_page
     end
     @items = @search.results
 

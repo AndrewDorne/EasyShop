@@ -31,6 +31,8 @@
     </script>
 </head>
 <!--slider-->
+
+
     <div class="container" style="padding-top:25px; padding-bottom:25px; text-align: center;">
       <div class="row" style="text-align: center">
         <form id="resizing">
@@ -71,5 +73,9 @@
 <% if @rsize.blank? %>
 <%= render "results_med" %>
 <% end %>
+
+<div class="digg_pagination" style="margin-left:500px;">
+    <%= paginate @items, :container => false %>
+  </div>
 
 
