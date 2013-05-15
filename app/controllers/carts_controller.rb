@@ -23,11 +23,37 @@ class CartsController < ApplicationController
 
   def add_to_cart
     @cart = Cart.find(params[:id])
-    @item = Item.find(params[:item_id])
-    @qty = params[:qty]
+    @item_id = params[:line_item][:item_id]
+    @item = Item.find(@item_id)
+    @qty = params[:line_item][:quantity].to_i
 
-    @qty.times do
-      @cart.items << @item
+    if @qty < 0
+      respond_to do |format|
+        format.html { redirect_to @cart, status: "Unable to update" }
+        format.json { render json: {:msg => "Cannot have negative items" }, status: :unprocessable_entity }
+      end
+    end
+
+    @cart.line_items.where(:item_id => @item_id).destroy_all
+
+    if @qty == 0
+      respond_to do |format|
+        format.html { redirect_to @cart, notice: 'Removed items'}
+        format.json { render json: @cart }
+      end
+    end
+
+    if @qty > 0
+      @qty.times do
+        @line_item = @cart.add_item(@item_id)
+        @line_item.item = @item
+        @line_item.save
+      end
+
+      respond_to do |format|
+        format.html { redirect_to @cart, notice: 'Updated number of items'}
+        format.json { render json: @cart }
+      end
     end
   end
 

@@ -1,0 +1,14 @@
+.row
+  .span3
+    = link_to image_tag(line_item.item.image), line_item.item
+  .span6
+    %h3= link_to line_item.item.name+" - ("+line_item.item.brand+")", line_item.item
+    %p= line_item.item.description
+  .span3
+    = form_for @cart, :url => {:action => "add_to_cart", :id => @cart.id}, :method => :put do |f|
+      = fields_for line_item do |fa|
+        = fa.text_field :quantity, :size => '3'
+        = fa.hidden_field :item_id, :value => line_item.item.id
+      = f.submit "Update"
+    %p= line_item.quantity 
+    .item_price= number_to_currency(line_item.total_price)

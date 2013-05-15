@@ -173,3 +173,11 @@ html, body {
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
+
+  .button-row form, .button-row form div {
+    display: inline-block;
+  }
+
+  .button-row form {
+    height: 64px;
+  }

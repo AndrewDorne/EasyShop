@@ -40,9 +40,9 @@
             
           <p style="padding-top: 15px;"><%= truncate(@items[-($i-@items.count)].description, :length => 275, :separator => ' ') %><%= link_to "        Read More>", @items[-($i-@items.count)] %></p>
 	<h2 style="padding-top:0px; font-size:4em;"> $<%= @items[-($i-@items.count)].price %> </h2>
-			<div class="btn-group" style="margin-left:187px;position:absolute;top:87%;">
+			<div class="button-row" style="margin-left:177px;position:absolute;top:87%;">
 					<%= link_to "More Information", @items[-($i-@items.count)], :class => 'btn btn-large' %>
-					<%= link_to "Add to Cart", '#', :class => 'btn btn-primary btn-large' %>
+					<%= button_to "Add to Cart", line_items_path(:item_id => @items[-($i-@items.count)]), :class => 'btn btn-primary btn-large' %>
     			</div>
         </div>
 		<% $i -= 1 %>

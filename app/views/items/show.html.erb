@@ -79,7 +79,7 @@
         </div>
         <div class="span3 offset1">
             <h2 class="item_price">$<%= @item.price%></h2>
-            <a onclick="window.open('shopping_cart.html');" href="javascript:;" style="font-size: 1em;" class="btn item_add">Add to Cart</a>
+            <%= button_to "Add to Cart", line_items_path(:item_id => @item.id), :class=>"btn item_add", :style=>"font-size: 1em"%>
         </div>
       </div>
       

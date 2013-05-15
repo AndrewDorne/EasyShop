@@ -12,4 +12,11 @@ class User < ActiveRecord::Base
   has_one :cart
   has_many :reviews
   has_many :comments
+
+  def current_cart
+    if self.cart.empty?
+      self.cart.create!
+    end
+    self.cart
+  end
 end

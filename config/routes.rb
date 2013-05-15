@@ -1,5 +1,7 @@
 EasyShop::Application.routes.draw do
 
+  resources :line_items
+
   root :to=>"pages#home"
   devise_for :users
 
@@ -18,6 +20,7 @@ EasyShop::Application.routes.draw do
   match 'items/results/:rsize/:search' => "items#results"
   match 'items/results/:rsize' => "items#results"
   # match '/items#index' => redirect("items#results")
+  match '/add_to_cart' => 'carts#add_to_cart', :via => :put
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"

@@ -9,8 +9,13 @@
         = image_submit_tag "magnifying_glass_small.png", :name => nil, :class => "btn" do
           %i.icon-white
 
-      - if user_signed_in? 
-        %ul.nav.pull-right
+      %ul.nav.pull-right
+        %li
+          =link_to cart_path(current_cart) do
+            .span{:class=>"label label-info", :style=>"min-width:0;min-height:0;margin-right:5px; margin-left:0px;padding-left:5px;padding-right:5px;padding-bottom:4px"}#{current_cart.total_items == 0 ? nil : current_cart.total_items }
+            %i.icon-shopping-cart.icon-large
+            #{current_cart.total_items == 0 ? nil : number_to_currency(current_cart.total_price)}
+        - if user_signed_in? 
           %li.dropdown
             %a.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
               = "#{current_user.first_name.titleize} #{current_user.last_name.titleize}"
@@ -18,14 +23,13 @@
             %ul.dropdown-menu
               %li
                 -# Currently broken but should go to an information page?
-                -# = link_to 'Profile', current_user
+                -# = link_to 'Profile', user_path(current_user)
               -# %li
               -#   = link_to 'Edit account', edit_user_registration_path
               -# %li.divider
               %li
                 = link_to "Sign Out", destroy_user_session_path, :method=>'delete'
-      - else
-        %ul.nav.pull-right
+        - else
           %li
             %a{:href=>"#SignUp", "data-toggle"=>"modal"} Sign Up
           %li.divider-vertical
