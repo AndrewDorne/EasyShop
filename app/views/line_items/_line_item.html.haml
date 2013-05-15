@@ -5,10 +5,10 @@
     %h3= link_to line_item.item.name+" - ("+line_item.item.brand+")", line_item.item
     %p= line_item.item.description
   .span3
-    = form_for @cart, :url => {:action => "add_to_cart", :id => @cart.id}, :method => :put do |f|
+    = form_for @cart, :url => {:action => "add_to_cart", :id => @cart.id}, :method => :put, :class => "form-inline" do |f|
       = fields_for line_item do |fa|
-        = fa.text_field :quantity, :size => '3'
+        = fa.text_field :quantity, :class => 'input-small', :style=>"margin-bottom:0px"
         = fa.hidden_field :item_id, :value => line_item.item.id
-      = f.submit "Update"
+      = f.submit "Update", :class => "btn btn-default"
     -# %p= line_item.quantity 
     .lead #{line_item.quantity} &times #{number_to_currency(line_item.price)} = #{number_to_currency(line_item.total_price)}
