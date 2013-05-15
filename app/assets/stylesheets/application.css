@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .welcome, .categories{
@@ -27,7 +27,7 @@ body {
 }
 
 .jumbotron {
-  margin-top: -10px;
+  margin-top: -20px;
   margin-bottom: 30px;
   padding-top: 15px;
   padding-bottom: 5px;
@@ -181,3 +181,8 @@ html, body {
   .button-row form {
     height: 64px;
   }
+
+  .shopping-cart-image img {
+    height: 200px;
+  }
+    

@@ -35,7 +35,7 @@
       <div class="span4 well item-result" style="height:475px;position:relative;">
         <h2><%= link_to truncate(@items[-($i-@items.count)].name, :length => 25, :separator => ' '), @items[-($i-@items.count)] %></h2>
         <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:200px;width:200px;'), @items[-($i-@items.count)] %>
-        <%= link_to image_tag(@items[-($i-@items.count)].image, :style => 'height:75px;width:75px;position:relative;margin-left:50px;margin-bottom: 130px;'), @items[-($i-@items.count)] %>
+        <%= link_to image_tag(@items[-($i-@items.count)].brandimage, :style => 'width:75px;position:relative;margin-left:50px;margin-bottom: 130px;'), @items[-($i-@items.count)] %>
             
         <p style="padding-top: 25px; "><%= truncate(@items[-($i-@items.count)].description, :length => 200, :separator => ' ') %><%= link_to "        Read More>", @items[-($i-@items.count)] %></p>
         <h2 style="padding-left:0px font-size:2em;"> $<%= @items[-($i-@items.count)].price %> </h2>
