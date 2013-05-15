@@ -35,7 +35,6 @@ class ItemsController < ApplicationController
       if params[:category_ids]
         with(:category_ids, params[:category_ids])
       end
-<<<<<<< HEAD
       order_map = {"relevance" => :score, "alpha" => :name, "price" => :price}
       direction_map = {"asc" => :asc, "desc" => :desc}
       if params[:order] and order_map.has_key?(params[:order])
@@ -47,9 +46,7 @@ class ItemsController < ApplicationController
           order_by(order, :asc)
         end
       end
-=======
       paginate :page => params[:page], :per_page => num_per_page
->>>>>>> 60e169492c923bf204ccd33d8cef228d557dc016
     end
     @items = @search.results
 
