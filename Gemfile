@@ -42,7 +42,7 @@ gem 'jquery-rails'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
-gem 'sunspot_rails'
+gem 'sunspot_rails', '~> 1.3.0'
 gem 'sunspot_solr'
 
 gem 'kaminari'
