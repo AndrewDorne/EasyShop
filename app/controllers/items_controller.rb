@@ -24,6 +24,17 @@ class ItemsController < ApplicationController
       if params[:category_ids]
         with(:category_ids, params[:category_ids])
       end
+      order_map = {"relevance" => :score, "alpha" => :name, "price" => :price}
+      direction_map = {"asc" => :asc, "desc" => :desc}
+      if params[:order] and order_map.has_key?(params[:order])
+        order = order_map[params[:order]]
+        if params[:direction] and direction_map.has_key?(params[:direction])
+          direction = direction_map[params[:direction]]
+          order_by(order, direction)
+        else
+          order_by(order, :asc)
+        end
+      end
     end
     @items = @search.results
 

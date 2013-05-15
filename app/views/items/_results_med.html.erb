@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="resources/css/search_results.css" />
 
-
 </head>
     <% 
 		$i = @items.count 
@@ -29,8 +28,23 @@
 		$numColumns = 2
 		$k = 0
 	%>
-    <% while $k < $numRows and $i > 0  do %>
-    <div class="row">
+     <div class="row">
+      <a class="dropdown-toggle" id="sort-label" data-toggle="dropdown" data-target="#" href="#">
+        <div class="dropdown btn span6 offset3">
+          Sort by:
+          <b class="caret"></b>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="sort-label">
+          <li><%= link_to "Alphabetical (Descending)", request.fullpath+"&order=alpha&direction=desc" %></li>
+          <li><%= link_to "Alphabetical (Ascending)", request.fullpath+"&order=alpha&direction=asc" %></li>
+          <li><%= link_to "Relevance", request.fullpath+"&order=relevance" %></li>
+          <li><%= link_to "Price (Low to High)", request.fullpath+"&order=price&direction=asc" %></li>
+          <li><%= link_to "Price (High to Low)", request.fullpath+"&order=price&direction=desc" %></li>
+        </ul>
+        </div>
+      </a>
+    </div>
+       <% while $k < $numRows and $i > 0  do %>
+  <div class="row">
 		<% $j = 0 %>
 		<% while $j < $numColumns and $i > 0 do %> 
         <div class="span6 well item-result" style="height:600px;position:relative;">
