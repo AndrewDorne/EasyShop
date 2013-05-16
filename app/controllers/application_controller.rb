@@ -34,12 +34,11 @@ class ApplicationController < ActionController::Base
     # to hand off from guest_user to current_user
     # TODO: Implement with items
     def logging_in
-      # For example:
-      # guest_comments = guest_user.comments.all
-      # guest_comments.each do |comment|
-        # comment.user_id = current_user.id
-        # comment.save!
-      # end
+      guest_items = guest_user.line_items.all
+      guest_items.each do |item|
+        item.user_id = current_user.id
+        item.save!
+      end
     end
 
     def create_guest_user

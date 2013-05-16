@@ -16,6 +16,12 @@ EasyShop::Application.routes.draw do
   end
 
   resources :comments, :reviews, :categories, :items, :charges, :users, :carts
+  resources :items do
+    resources :reviews
+  end
+  resources :users do
+    resources :reviews
+  end
 
   match 'items/results/:rsize/:search' => "items#results"
   match 'items/results/:rsize' => "items#results"

@@ -1,5 +1,5 @@
 class Review < ActiveRecord::Base
-  attr_accessible :description, :rating, :title
+  attr_accessible :description, :rating, :title, :item_id, :user_id
   # array of likes 
 
   belongs_to :user
